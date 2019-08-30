@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<body>
+  
+<div id="device1"></div>
+
+<script type="text/babel">
+class Abc extends React.Component {
+  render() {
+   return (
+    <div>
+    <h1>IT-company!</h1>
+    <ol>
+    <li>Wipro</li>
+    <li>Skava</li>
+    <li>Infosys</li>
+    </ol>
+    <ol start="50">
+    <li>Wipro</li>
+    <li>Skava</li>
+    <li>Infosys</li>
+    </ol>
+    <h2>Mobiles</h2>
+    <ol>
+    <li>Samsung</li>
+    <li>Nokia</li>
+    <li>realme</li>
+    </ol>
+    </div>);
+    }
+    }
+    
+class Xyz extends React.Component {
+ render() {
+
+    return (
+
+      <div>
+
+      <h1><center>IT and Mobile-Company</center></h1>
+
+      <Abc />
+
+      </div>
+
+    );
+
+  }
+
+}
+
+
+
+ReactDOM.render(<Xyz />, document.getElementById('device1'));
+
+</script>
+
+
+
+</body>
+
+</html>
+
+        
+    
+  
